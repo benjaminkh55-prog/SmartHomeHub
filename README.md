@@ -54,29 +54,8 @@ Facade → huvud-API
 
 Detta gör systemet lätt att utöka.
 
-📊 Klassdiagram (rita i draw.io)
+📊 Klassdiagram 
 
-Rita detta (enkelt räcker):
-
-IDevice → Lamp, Thermostat, DoorLock
-ICommand → konkreta commands
-IObserver → Dashboard, AuditLogger
-IModeStrategy → Normal/Eco/Party
-SmartHomeFacade använder:
-CommandInvoker
-Strategy
-Devices
-▶️ Exempel på körning (Demo Output)
-[LOG] Lamp added
-[LOG] Thermostat added
-[LOG] DoorLock added
-
-[Dashboard] Lamp turned ON
-[Audit] Lamp turned ON
-[LOG] Lamp turned ON
-
-[Dashboard] Thermostat set to 25°C
-[Audit] Thermostat set to 25°C
 
 Replaying last 2 commands...
 
